@@ -1,0 +1,19 @@
+{
+  "name": "results-summary-component",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.69.5"
+  }
+}
