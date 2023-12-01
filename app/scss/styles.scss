@@ -8,16 +8,23 @@
     src: url('../fonts/Roboto-Regular.woff2') format('woff2');
 }
 
+$primary-tomato: hsl(4, 100%, 67%);
+
+$neutral-dark-slate-grey: hsl(234, 29%, 20%);
+$neutral-charcoal-grey: hsl(235, 18%, 26%);
+$neutral-grey: hsl(231, 7%, 60%);
+$neutral-white: hsl(0,0%, 100%);
+
 $attribution-link: hsl(228, 45%, 44%);
 
-.wrapper  {
+.main-page  {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    box-shadow: 20px 20px 50px $shadow-color;
+    //box-shadow: 20px 20px 50px $shadow-color;
     border-radius: 25px;
     @media only screen and (width < 768px) {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
@@ -27,22 +34,99 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto Bold', serif;
+    font-family: 'Roboto Regular', serif;
+    background-color: $neutral-charcoal-grey;
 }
 
 
 
+.main-page {
+    background-color: $neutral-white;
+}
 
-//My styles here
 
 
+.sign-up {
+    width: 50%;
+}
+
+.sign-up__header {
+    padding-top: 20%;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Roboto Bold', serif;
+}
+
+.sign-up__text {
+    padding-left: 10%;
+}
+
+.sign-up__list {
+    padding-left: 15%;
+    margin-bottom: 15%;
+    list-style-image: url('../images/icon-list.svg');
+}
+
+.email-input__input-label {
+    padding-left: 10%;
+    font-size: 12px;
+    font-family: 'Roboto Bold', serif;
+}
+
+.email-input__input-field {
+    margin-left: 10%;
+    width: 83%;
+    padding: 3%;
+    border-radius: 8px;
+    border-color: lightgray;
+    border-style: solid;
+}
+
+.sign-up__submit-button {
+    margin-top: 5%;
+    margin-left: 9%;
+    width: 92%;
+    border-radius: 8px;
+    padding: 3%;
+    background-color: $neutral-dark-slate-grey;
+    color: $neutral-white;
+}
+
+
+
+.image-section {
+    width: 50%;
+}
+
+.image-section__img {
+    padding-left: 5%;
+    width: 90%;
+    padding-top: 5%;
+    height: 92%;
+}
+
+
+
+/*
+.main-page--disabled {
+    overflow: hidden;
+    position: fixed;
+    visibility: hidden; //change later
+}
+*/
+.pop-up--disabled {
+    overflow: hidden;
+    position: fixed;
+    visibility: hidden; //change later
+}
 
 .attribution {
     position: absolute;
     bottom: 25px;
     font-size: 11px; 
+    color: $neutral-white;
     text-align: center; 
 }
 .attribution__link { 
-    color: $attribution-link; 
+    color: $neutral-grey; 
 }
