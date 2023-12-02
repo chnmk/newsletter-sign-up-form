@@ -51,20 +51,39 @@ html, body {
 }
 
 .sign-up__header {
-    padding-top: 20%;
+    padding-top: 10%;
+    margin-bottom: 7%;
     text-align: center;
     font-size: 48px;
     font-family: 'Roboto Bold', serif;
 }
 
 .sign-up__text {
-    padding-left: 10%;
+    padding-left: 12%;
+    font-size: 16px;
+    line-height: 25px;
 }
 
 .sign-up__list {
-    padding-left: 15%;
-    margin-bottom: 15%;
+    margin-top: 5%;
+    padding-left: 18%;
+    margin-bottom: 5%;
     list-style-image: url('../images/icon-list.svg');
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.sign-up__point-1-span {
+    position: relative;
+    top: -4px;
+}
+.sign-up__point-2-span {
+    position: relative;
+    top: -4px;
+}
+.sign-up__point-3-span {
+    position: relative;
+    top: -4px;
 }
 
 .email-input__input-label {
