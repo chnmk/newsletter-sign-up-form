@@ -64,7 +64,7 @@ html, body {
             $primary-tomato-2
             );
         box-shadow: 
-            0px -30px 30px $neutral-white,
+            0px -15px 15px $neutral-white,
             0px 0px 30px $primary-tomato;
     }
 }
@@ -114,6 +114,14 @@ html, body {
         padding-left: 13%;
         font-size: 12px;
         font-family: 'Roboto Bold', serif;
+        width: 82%;
+    }
+    &__error{
+        color: red;
+        float: inline-end;
+        &--disabled{
+            display: none;
+        }
     }
     &__input-field {
         margin-left: 13%;
@@ -123,6 +131,11 @@ html, body {
         border: 1px solid $neutral-grey_outline;
         font-size: 16px;
         color:$neutral-charcoal-grey;
+        &--error {
+            border-color: #be7f7a;
+            background-color: #ffe8e6;
+            color: #be7f7a;
+        }
     }
 }
 
@@ -174,6 +187,10 @@ html, body {
         margin-bottom: 8%;
         width: 76%;
         line-height: 24px;
+    }
+
+    &__email-display {
+        font-family: 'Roboto Bold', serif;
     }
 
     &__dismiss-button {

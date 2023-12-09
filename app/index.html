@@ -40,9 +40,15 @@
         </ul>
         <div class="email-input">
           <p class="email-input__input-label">
-            Email address
+            <span class="email-input__text">
+              Email address
+            </span>
+            <span class="email-input__error email-input__error--disabled">
+              Valid email required
+            </span>
           </p>
-          <input class="email-input__input-field" placeholder="email@company.com">
+          <input class="email-input__input-field"  
+            placeholder="email@company.com">
           </input>
         </div>
         <button class="sign-up__submit-button sign-up__submit-button--active" onclick="submitEmail()">
@@ -59,7 +65,7 @@
         Thanks for subscribing!
       </h1>
       <p class="pop-up__text">
-        A confirmation email has been sent to ash@loremcompany.com. 
+        A confirmation email has been sent to <span class="pop-up__email-display">ash@loremcompany.com</span>.
         Please open it and click the button inside to confirm your subscription.
       </p>
       <button class="pop-up__dismiss-button" onclick="closePopup()">
