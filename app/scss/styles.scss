@@ -36,18 +36,26 @@ html, body {
     flex-wrap: wrap;
     //box-shadow: 20px 20px 50px $shadow-color;
     border-radius: 36px;
+    background-color: $neutral-white;
+    @media only screen and (width >= 768px) {
+        height: 641px;
+        width: 928px;
+    }
     @media only screen and (width < 768px) {
         flex-direction: column-reverse;
     }
-    background-color: $neutral-white;
-    height: 641px;
-    width: 928px;
+
 }
 
 %bullet-point-default {
     position: relative;
     top: -4px;
     left: 10px;
+}
+%span-point-default {
+    @media only screen and (width < 768px) {
+        margin-bottom: 8px;
+    }
 }
 
 %button-default {
@@ -70,7 +78,9 @@ html, body {
 }
 
 .sign-up {
-    width: 50%;
+    @media only screen and (width >= 768px) {
+        width: 50%;
+    }
 
     &__header {
         padding-top: 10%;
@@ -80,12 +90,22 @@ html, body {
         color: $neutral-dark-slate-grey;
         font-family: 'Roboto Bold', serif;
         font-weight: 500;
+        @media only screen and (width < 768px) {
+            font-size: 42px;
+            text-align: left;
+            margin-left: 11%;
+        }
     }
 
     &__text {
         padding-left: 13%;
         font-size: 16px;
         line-height: 25px;
+        @media only screen and (width < 768px) {
+            text-align: left;
+            padding-left: 11%;
+            width: 70%;
+        }
     }
 
     &__list {
@@ -95,6 +115,11 @@ html, body {
         list-style-image: url('../images/icon-list.svg');
         font-size: 16px;
         line-height: 36px;
+        @media only screen and (width < 768px) {
+            padding-left: 17%;
+            width: 64%;
+            line-height: 24px;
+        }
     }
 
     &__point-1-span {
@@ -106,6 +131,15 @@ html, body {
     &__point-3-span {
         @extend %bullet-point-default;
     }
+    &__point-1 {
+        @extend %span-point-default;
+    }
+    &__point-2 {
+        @extend %span-point-default;
+    }
+    &__point-3 {
+        @extend %span-point-default;
+    }
 }
 
 .email-input {
@@ -115,6 +149,11 @@ html, body {
         font-size: 12px;
         font-family: 'Roboto Bold', serif;
         width: 82%;
+        @media only screen and (width < 768px) {
+            padding-top: 5%;
+            padding-left: 10%;
+            width: 72%;
+        }
     }
     &__error{
         color: red;
@@ -136,6 +175,10 @@ html, body {
             background-color: #ffe8e6;
             color: #be7f7a;
         }
+        @media only screen and (width < 768px) {
+            margin-left: 10%;
+            width: 72%;
+        }
     }
 }
 
@@ -145,18 +188,35 @@ html, body {
     width: 83%;
     padding: 4%;
     @extend %button-default;
+    @media only screen and (width < 768px) {
+        margin-left: 10%;
+        width: 80%;
+        margin-bottom: 10%;
+    }
 }
 
 .image-section {
-    width: 50%;
+    @media only screen and (width >= 768px) {
+        width: 50%;
+    }
 
-    &__img {
+    &__img-desktop {
+        @media only screen and (width < 768px) {
+            display: none;
+        }
         padding-left: 7%;
         width: 90%;
         padding-top: 5%;
         height: 92%;
     }
+    &__img-mobile {
+        @media only screen and (width >= 768px) {
+            display: none;
+        }
+        width: 100%;
+    }
 }
+
 
 //============================
 
@@ -165,6 +225,10 @@ html, body {
     background-color: $neutral-white;
     width: 503px;
     height: 520px;
+    @media only screen and (width < 768px) {
+        width: 360px;
+        height: 480px;
+    }
 
     &__icon-success {
         margin-top: 10%;
@@ -180,6 +244,9 @@ html, body {
         color: $neutral-dark-slate-grey;
         font-weight: 500;
         line-height: 56px;
+        @media only screen and (width < 768px) {
+            font-size: 42px;
+        }
     }
 
     &__text {
@@ -198,6 +265,9 @@ html, body {
         width: 75%;
         padding: 3.5%;
         @extend %button-default;
+        @media only screen and (width < 768px) {
+            margin-top: 5%;
+        }
     }
 }
 
@@ -212,11 +282,15 @@ html, body {
 }
 
 .attribution {
-    position: absolute;
-    bottom: 25px;
+    padding-top: 64px;
+    padding-bottom: 32px;
     font-size: 11px; 
-    color: $neutral-white;
     text-align: center; 
+    color: $neutral-white;
+    @media only screen and (width < 768px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
 
     &__link { 
         color: $neutral-grey; 

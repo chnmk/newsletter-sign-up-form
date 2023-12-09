@@ -54,7 +54,7 @@ function watching() {
 }
 
 function cleaning() {
-    return src('dist')
+    return src('dist', {allowEmpty: true})
     .pipe(clean())
 }
 

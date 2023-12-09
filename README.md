@@ -16,17 +16,19 @@ Users should be able to:
 
 ### Screenshot (02-12-2023)
 
-![](./screenshot.png)
+![](./preview/screenshot.png)
 
-### TODO
+### Links
 
-* Mobile layout
-* Success message
-* Form validation messages
-* Hover and focus states
+- Solution URL: [Vercel deployment](https://newsletter-sign-up-form-git-main-chnmks-projects.vercel.app/)
 
 ### Built with
 
 - Gulp
+- Flexbox
 - SCSS
-- (Update later)
+- BEM
+
+### TODO
+
+* Update mobile layout
