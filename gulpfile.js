@@ -63,7 +63,7 @@ function building() {
         'app/css/style.min.css',
         'app/js/main.min.js',
         'app/images/**/*.+(png|jpg|gif|svg)',
-        'app/fonts/**/*.ttf',
+        'app/fonts/**/*.woff2',
         'app/index.html'
     ], {base: 'app'})
     .pipe(dest('dist'))
