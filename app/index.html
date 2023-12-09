@@ -6,13 +6,14 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/main.min.js"></script> 
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
 </head>
 <body>
   <main class="wrapper">
-    <section class="main-page main-page--disabled">
+    <section class="main-page">
       <div class="sign-up">
         <h1 class="sign-up__header">
           Stay updated!
@@ -44,7 +45,7 @@
           <input class="email-input__input-field" placeholder="email@company.com">
           </input>
         </div>
-        <button class="sign-up__submit-button">
+        <button class="sign-up__submit-button sign-up__submit-button--active" onclick="submitEmail()">
           Subscribe to monthly newsletter
         </button>
       </div>
@@ -61,7 +62,7 @@
         A confirmation email has been sent to ash@loremcompany.com. 
         Please open it and click the button inside to confirm your subscription.
       </p>
-      <button class="pop-up__dismiss-button">
+      <button class="pop-up__dismiss-button" onclick="closePopup()">
         Dismiss message
       </button>
     </section>
