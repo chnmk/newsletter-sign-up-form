@@ -65,6 +65,7 @@ html, body {
     color: $neutral-white;
     font-size: 15px;
     font-weight: 700;
+    transition: box-shadow 1s;
     &:hover{
         background: linear-gradient(
             to left,
@@ -74,6 +75,7 @@ html, body {
         box-shadow: 
             0px -15px 15px $neutral-white,
             0px 0px 30px $primary-tomato;
+        transition: box-shadow 1s;
     }
 }
 
@@ -155,7 +157,7 @@ html, body {
             width: 72%;
         }
     }
-    &__error{
+    &__error {
         color: red;
         float: inline-end;
         &--disabled{
@@ -170,10 +172,12 @@ html, body {
         border: 1px solid $neutral-grey_outline;
         font-size: 16px;
         color:$neutral-charcoal-grey;
+        transition: .5s;
         &--error {
             border-color: #be7f7a;
             background-color: #ffe8e6;
             color: #be7f7a;
+            transition: .5s;
         }
         @media only screen and (width < 768px) {
             margin-left: 10%;
