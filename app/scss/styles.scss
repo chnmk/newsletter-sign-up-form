@@ -31,6 +31,8 @@ html, body {
 }
 
 .main-page  {
+    opacity: 1;
+    transition: opacity linear .15s;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -225,6 +227,8 @@ html, body {
 //============================
 
 .pop-up {
+    opacity: 1;
+    transition: opacity linear .15s;
     border-radius: 36px;
     background-color: $neutral-white;
     width: 503px;
@@ -276,6 +280,17 @@ html, body {
 }
 
 //============================
+
+.main-page--invisible {
+    opacity: 0;
+    transition: opacity linear .15s;
+    font-size: 30;
+}
+
+.pop-up--invisible {
+    opacity: 0;
+    transition: opacity linear .15s;
+}
 
 .main-page--disabled {
     display: none;
